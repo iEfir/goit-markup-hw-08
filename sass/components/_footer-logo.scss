@@ -1,0 +1,10 @@
+.footer__logo {
+    min-width: 145px;
+    color: #ffffff;
+    .footer__logo-part {
+            color: var(--logo-focus-hover-color);
+        }
+    &:focus {
+            color: var(--logo-focus-hover-color);
+        }
+}

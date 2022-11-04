@@ -1,0 +1,80 @@
+.team {
+    padding-top: var(--distance-top-bottom-section);
+    padding-bottom: var(--distance-top-bottom-section);
+    background: #f5f4fa;
+}
+
+.team__tagline {
+    font-weight: var(--title-logo-font-weight);
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-bottom: 50px;
+}
+
+.team__list {
+    display: flex;
+    gap: 30px;
+    .team__item {
+            width: 270px;
+            background: #ffffff;
+            border-radius: 4px;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+}
+
+.team__member {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .team__name {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.18;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: var(--title-color);
+            margin-bottom: 10px;
+        }
+    .team__activity {
+            font-size: 16px;
+            line-height: 1.18;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #757575;
+            margin-bottom: 16px;
+        }
+}
+
+.team__soc-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    .team__soc-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+                .team__soc-link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    fill: #afb1b8;
+                    transition: var(--animation-hover-bg), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+                &:hover,
+                &:focus {
+                    background-color: var(--logo-focus-hover-color);
+                    fill: #ffffff;}
+                }
+}
