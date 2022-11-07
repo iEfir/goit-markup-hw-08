@@ -1,6 +1,6 @@
 .activity {
-    padding-top: var(--distance-top-bottom-section);
-    padding-bottom: var(--distance-top-bottom-section);
+    padding: var(--padding-section);
+    display: none;
 }
 
 .activity__text {

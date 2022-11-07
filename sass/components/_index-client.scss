@@ -1,6 +1,5 @@
 .client {
-    padding-top: var(--distance-top-bottom-section);
-    padding-bottom: var(--distance-top-bottom-section);
+    padding: var(--padding-section);
     .client-container {
             text-align: center;
         }
@@ -8,18 +7,19 @@
 
 .client__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    margin-bottom: 30px;
 }
 
 .client__list {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .client__item {
@@ -31,7 +31,7 @@
             justify-content: center;
             align-items: center;
             fill: #afb1b8;
-            width: 170px;
+            width: 210px;
             height: 90px;
             border: 1px solid #afb1b8;
             border-radius: 4px;
