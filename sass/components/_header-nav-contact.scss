@@ -3,19 +3,21 @@
     transition: var(--animation-hover-focus);
 }
 
-// .current::after {
-//     content: "";
-//     width: 100%;
-//     height: 4px;
-//     border-radius: 2px;
-//     background: var(--logo-focus-hover-color);
-
-//     position: absolute;
-//     bottom: -1px;
-//     left: 0;
-
-//     pointer-events: none;
-// }
+.current::after {
+    @media screen and (min-width: 768px) {
+        content: "";
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background: var(--logo-focus-hover-color);
+        
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        
+        pointer-events: none;
+    }
+}
 
 .current {
     padding: 0px 1.5px;
@@ -74,6 +76,7 @@
 
 .mob-menu-soc {
     display: flex;
+    width: 100%;
 }
 
 .mob-menu-soc__item {
@@ -94,4 +97,6 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196F3;
+    display: block;
+    width: 100%;
 }
