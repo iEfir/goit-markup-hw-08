@@ -19,9 +19,10 @@
 
 .navigation__list,
 .contact-header {
-    // display: flex;
-    // gap: 50px;
-    // margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: auto;
 }
 
 .navigation__item{
