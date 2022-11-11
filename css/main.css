@@ -243,6 +243,9 @@ img {
   fill: var(--logo-focus-hover-color);
 }
 
+.container-tablet-menu {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .container-tablet-menu {
     display: flex;
@@ -727,6 +730,12 @@ img {
   }
 }
 
+.footer__address-soc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
 @media screen and (min-width: 768px) {
   .footer__address-soc {
     display: flex;

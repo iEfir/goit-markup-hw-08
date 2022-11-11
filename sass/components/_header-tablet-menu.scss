@@ -1,4 +1,5 @@
 .container-tablet-menu {
+    display: none;
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
