@@ -1,9 +1,14 @@
 .container {
     margin: 0 auto;
+    @media screen and (min-width: 480px) {
+            width: 480px;
+        }
 
-    @include mobile();
+    @media screen and (min-width: 768px) {
+            width: 768px;
+        }
 
-    @include tablet();
-
-    @include desktop();
+    @media screen and (min-width: 1200px) {
+            width: 1200px;
+        }
 }

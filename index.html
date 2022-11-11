@@ -32,7 +32,7 @@
             <use href="./img/symbol-defs.svg#icon-mobile-menu"></use>
           </svg>
         </button>
-        <div class="mob-menu tablet-menu is-hidden" data-menu>
+        <div class="mob-menu is-hidden" data-menu>
           <div class="container-mob-menu">
             <div class="mob-menu-navigation">
               <nav class="navigation">
@@ -88,6 +88,40 @@
             </button>
           </div>
         </div>
+        <div class="container-tablet-menu">
+          <div class="tablet-menu-navigation">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="navigation__link current" href="index.html">Студія</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="portfolio.html">Портфоліо</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="tablet-contact">
+            <ul class="contact-header">
+              <li class="contact-header__item">
+                <a class="contact-header__link header-email" href="mailto:info@devstudio.com">
+                  <svg class="contact-header__icon" width="16" height="12">
+                    <use href="./img/symbol-defs.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a>
+              </li>
+              <li class="contact-header__item">
+                <a class="contact-header__link header-tel" href="tel:+380961111111">
+                  <svg class="contact-header__icon" width="10" height="16">
+                    <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
       </div>
     </header>
 
@@ -201,8 +235,14 @@
             <li class="team__item">
               <picture>
                 <source srcset="./img/Mobile/photo-mobile1-450.jpg 1x,
-                  ./img/Mobile/photo-mobile1-2x-450.jpg 2x">
-                  <!-- media="(max-width: 767px)"> -->
+                  ./img/Mobile/photo-mobile1-2x-450.jpg 2x"
+                  media="(max-width: 767px)">
+                  <source srcset="./img/Tablet/photo-tablet1.jpg 1x,
+                  ./img/Tablet/photo-tablet1-2x.jpg 2x"
+                  media="(min-width: 768px)">
+                  <source srcset="./img/Mobile/photo-mobile1-450.jpg 1x,
+                  ./img/Mobile/photo-mobile1-2x-450.jpg 2x"
+                  media="(min-width: 1200px)">
                 <img class="team__img"
                   src="./img/Mobile/photo-mobile1-450.jpg"
                   alt="Фото сотрудника"
@@ -247,8 +287,14 @@
             <li class="team__item">
               <picture>
                 <source srcset="./img/Mobile/photo-mobile2-450.jpg 1x,
-                  ./img/Mobile/photo-mobile2-2x-450.jpg 2x">
-                  <!-- media="(max-width: 767px)"> -->
+                  ./img/Mobile/photo-mobile2-2x-450.jpg 2x"
+                  media="(max-width: 767px)">
+                  <source srcset="./img/Tablet/photo-tablet2.jpg 1x,
+                  ./img/Tablet/photo-tablet2-2x.jpg 2x"
+                  media="(min-width: 768px)">
+                  <source srcset="./img/Mobile/photo-mobile1-450.jpg 1x,
+                  ./img/Mobile/photo-mobile1-2x-450.jpg 2x"
+                  media="(min-width: 1200px)">
                 <img class="team__img"
                   src="./img/Mobile/photo-mobile2-450.jpg"
                   alt="Фото сотрудника"
@@ -293,8 +339,14 @@
             <li class="team__item">
               <picture>
                 <source srcset="./img/Mobile/photo-mobile3-450.jpg 1x,
-                  ./img/Mobile/photo-mobile3-2x-450.jpg 2x">
-                  <!-- media="(max-width: 767px)"> -->
+                  ./img/Mobile/photo-mobile3-2x-450.jpg 2x"
+                  media="(max-width: 767px)">
+                  <source srcset="./img/Tablet/photo-tablet3.jpg 1x,
+                  ./img/Tablet/photo-tablet3-2x.jpg 2x"
+                  media="(min-width: 768px)">
+                  <source srcset="./img/Mobile/photo-mobile1-450.jpg 1x,
+                  ./img/Mobile/photo-mobile1-2x-450.jpg 2x"
+                  media="(min-width: 1200px)">
                 <img class="team__img"
                   src="./img/Mobile/photo-mobile3-450.jpg"
                   alt="Фото сотрудника"
@@ -339,8 +391,14 @@
             <li class="team__item">
               <picture>
                 <source srcset="./img/Mobile/photo-mobile4-450.jpg 1x,
-                  ./img/Mobile/photo-mobile4-2x-450.jpg 2x">
-                  <!-- media="(max-width: 767px)"> -->
+                  ./img/Mobile/photo-mobile4-2x-450.jpg 2x"
+                  media="(max-width: 767px)">
+                  <source srcset="./img/Tablet/photo-tablet4.jpg 1x,
+                  ./img/Tablet/photo-tablet4-2x.jpg 2x"
+                  media="(min-width: 768px)">
+                  <source srcset="./img/Mobile/photo-mobile1-450.jpg 1x,
+                  ./img/Mobile/photo-mobile4-2x.jpg 2x"
+                  media="(min-width: 1200px)">
                 <img class="team__img"
                   src="./img/Mobile/photo-mobile4-450.jpg"
                   alt="Фото сотрудника"
@@ -439,62 +497,64 @@
 
     <footer class="footer">
       <div class="container container-footer">
-        <div class="footer__logo-address">
-          <a class="footer__logo" href="">
-            <span class="footer__logo-part">Web</span>Studio
-          </a>
-          <address class="address">
-            <ul class="address__list">
-              <li class="address__item">
-                <a class="address__map-place" href=""
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer__address-soc">
+          <div class="footer__logo-address">
+            <a class="footer__logo" href="">
+              <span class="footer__logo-part">Web</span>Studio
+            </a>
+            <address class="address">
+              <ul class="address__list">
+                <li class="address__item">
+                  <a class="address__map-place" href=""
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__soc">
+            <h3 class="footer__soc-title">приєднуйтесь</h3>
+            <ul class="footer__soc-list">
+              <li class="footer__soc-item">
+                <a class="footer__soc-link" href="">
+                  <svg class="footer__soc-icon" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a class="address__link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="footer__soc-item">
+                <a class="footer__soc-link" href="">
+                  <svg class="footer__soc-icon" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a class="address__link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+              <li class="footer__soc-item">
+                <a class="footer__soc-link" href="">
+                  <svg class="footer__soc-icon" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__soc-item">
+                <a class="footer__soc-link" href="">
+                  <svg class="footer__soc-icon" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__soc">
-          <h3 class="footer__soc-title">приєднуйтесь</h3>
-          <ul class="footer__soc-list">
-            <li class="footer__soc-item">
-              <a class="footer__soc-link" href="">
-                <svg class="footer__soc-icon" width="20" height="20">
-                  <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__soc-item">
-              <a class="footer__soc-link" href="">
-                <svg class="footer__soc-icon" width="20" height="20">
-                  <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__soc-item">
-              <a class="footer__soc-link" href="">
-                <svg class="footer__soc-icon" width="20" height="20">
-                  <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__soc-item">
-              <a class="footer__soc-link" href="">
-                <svg class="footer__soc-icon" width="20" height="20">
-                  <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <forma class="footer__form">
           <h3 class="footer__form-title">Підпишіться на розсилку</h3>

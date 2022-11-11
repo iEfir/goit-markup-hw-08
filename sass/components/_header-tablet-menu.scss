@@ -1,5 +1,17 @@
-// .tablet-menu {
-//     @media screen and (min-width: 768px) {
-        
-//     }
-// }
+.container-tablet-menu {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        width: 768px;
+        justify-content: space-between;
+    }
+}
+
+.tablet-menu-navigation,
+.tablet-contact {
+    @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    }
+}

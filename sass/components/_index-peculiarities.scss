@@ -7,14 +7,20 @@
 }
 
 .peculiarities__list {
-    // display: flex;
-    // gap: 30px;
     .peculiarities__item {
         width: 100%;
         margin-bottom: 30px;
             &:last-child {
                 margin-bottom: 0;
             }
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
     }
 }
 
@@ -38,6 +44,9 @@
     text-transform: uppercase;
     color: var(--title-color);
     margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+        text-align: start;
+    }
 }
 
 .peculiarities__description {
