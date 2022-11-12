@@ -1257,9 +1257,8 @@ img {
   background: #188ce8;
 }
 
-.portfolio-hero {
-  padding-top: var(--distance-top-bottom-section);
-  padding-bottom: var(--distance-top-bottom-section);
+.portfolio-hero .container-portfolio {
+  padding: var(--padding-section-desktop);
 }
 
 .filter {
