@@ -373,6 +373,7 @@ img {
 @media screen and (min-width: 768px) {
   .contact-header__link {
     display: flex;
+    gap: 8px;
   }
 }
 @media screen and (min-width: 1200px) {
