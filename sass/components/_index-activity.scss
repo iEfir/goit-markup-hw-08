@@ -1,6 +1,14 @@
 .activity {
-    padding: var(--padding-section);
     display: none;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.container-activity {
+    padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .activity__text {

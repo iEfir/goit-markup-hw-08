@@ -6,6 +6,9 @@
         width: 768px;
         justify-content: space-between;
     }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .tablet-menu-navigation,
@@ -14,5 +17,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
     }
 }

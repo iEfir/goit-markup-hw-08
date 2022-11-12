@@ -5,6 +5,10 @@
     letter-spacing: 0.03em;
     min-width: 154px;
     color: #ffffff;
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
     .footer__logo-part {
             color: var(--logo-focus-hover-color);
         }

@@ -2,6 +2,9 @@
     .client-container {
             padding: var(--padding-section);
             text-align: center;
+            @media screen and (min-width: 1200px) {
+                padding: var(--padding-section-desktop);
+            }
         }
 }
 
@@ -13,6 +16,10 @@
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.16;
+    }
 }
 
 .client__list {
@@ -32,7 +39,7 @@
             align-items: center;
             fill: #afb1b8;
             width: 210px;
-            height: 90px;
+            height: 92px;
             border: 1px solid #afb1b8;
             border-radius: 4px;
             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -42,6 +49,14 @@
             &:focus {
                 fill: var(--logo-focus-hover-color);
                 border: 1px solid var(--logo-focus-hover-color);
+            }
+
+            @media screen and (min-width: 768px) {
+                width: 226px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                width: 170px;
             }
         }
 }

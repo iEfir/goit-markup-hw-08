@@ -4,6 +4,9 @@
 
 .container-team {
     padding: var(--padding-section);
+    @media screen and (min-width: 1200px) {
+        padding: var(--padding-section-desktop);
+    }
 }
 
 .team__tagline {
@@ -38,6 +41,10 @@
 
             @media screen and (min-width: 768px) {
                 width: 354px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                width: 270px;
             }
         }
 }
