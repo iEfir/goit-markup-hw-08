@@ -1,11 +1,9 @@
 .client {
-    .client-container {
-            padding: var(--padding-section);
-            text-align: center;
-            @media screen and (min-width: 1200px) {
-                padding: var(--padding-section-desktop);
-            }
-        }
+    padding: var(--padding-section);
+    text-align: center;         
+    @media screen and (min-width: 1200px) {
+        padding: var(--padding-section-desktop);
+    }
 }
 
 .client__title {
@@ -19,6 +17,7 @@
     @media screen and (min-width: 1200px) {
         font-size: 36px;
         line-height: 1.16;
+        margin-bottom: 50px;
     }
 }
 

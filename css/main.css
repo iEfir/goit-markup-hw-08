@@ -412,18 +412,21 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #2196F3;
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
   .header-tel {
     font-size: 12px;
     line-height: 1.14;
     color: #757575;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .header-tel {
     font-size: 14px;
     line-height: 1.14;
+    margin: 0;
   }
 }
 
@@ -436,11 +439,12 @@ img {
 
 .mob-menu-soc {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .mob-menu-soc__item {
-  padding-right: 9px;
+  padding-right: 10px;
   padding-left: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
@@ -462,12 +466,25 @@ img {
 }
 
 .hero {
+  padding: 118px 0;
+  margin: 0 auto;
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Mobile/header-mobile-bg.jpg), url(../img/Mobile/header-mobile-bg-2x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    padding: 118px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+    padding: 200px 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -484,19 +501,6 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 118px 60px;
-}
-@media screen and (min-width: 768px) {
-  .hero-container {
-    width: 768px;
-    padding: 118px 204px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero-container {
-    width: 1200px;
-    padding: 200px 252px;
-  }
 }
 
 .hero-container__tagline {
@@ -509,10 +513,16 @@ img {
   color: #ffffff;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .hero-container__tagline {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero-container__tagline {
     font-size: 44px;
     line-height: 1.36;
+    width: 696px;
   }
 }
 
@@ -537,11 +547,11 @@ img {
   background: #188ce8;
 }
 
-.container-peculiarities {
+.peculiarities {
   padding: var(--padding-section);
 }
 @media screen and (min-width: 1200px) {
-  .container-peculiarities {
+  .peculiarities {
     padding: var(--padding-section-desktop);
   }
 }
@@ -611,13 +621,10 @@ img {
 @media screen and (min-width: 1200px) {
   .activity {
     display: flex;
+    padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
-}
-
-.container-activity {
-  padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .activity__text {
@@ -668,13 +675,10 @@ img {
 
 .team {
   background: #f5f4fa;
-}
-
-.container-team {
   padding: var(--padding-section);
 }
 @media screen and (min-width: 1200px) {
-  .container-team {
+  .team {
     padding: var(--padding-section-desktop);
   }
 }
@@ -687,6 +691,13 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-color);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__tagline {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .team__list {
@@ -776,12 +787,12 @@ img {
   fill: #ffffff;
 }
 
-.client .client-container {
+.client {
   padding: var(--padding-section);
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
-  .client .client-container {
+  .client {
     padding: var(--padding-section-desktop);
   }
 }
@@ -799,6 +810,7 @@ img {
   .client__title {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
@@ -842,6 +854,7 @@ img {
 
 .footer {
   background: #2f303a;
+  padding: var(--padding-section);
 }
 
 .container-footer {
@@ -849,7 +862,6 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 60px;
-  padding: var(--padding-section);
 }
 @media screen and (min-width: 768px) {
   .container-footer {
@@ -891,6 +903,12 @@ img {
 .address {
   padding-top: 20px;
   max-width: 231px;
+}
+@media screen and (min-width: 1200px) {
+  .address .address__item {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 .address .address__item:not(:last-child) {
   margin-bottom: 9px;
@@ -936,6 +954,12 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__soc .footer__soc-title {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .footer__soc-list {
@@ -1066,13 +1090,12 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
-  padding: 93px 15px;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .modal-backdrop {
-    padding: 207px 159px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1082,13 +1105,16 @@ img {
 }
 
 .modal {
-  width: 100%;
-  height: 609px;
-  padding: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  max-height: 609px;
+  padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: translate(0, 0) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
@@ -1103,7 +1129,7 @@ img {
 }
 
 .modal-backdrop.is-hidden .modal {
-  transform: translate(0, 0) scale(0);
+  transform: translate(-50%, -50%) scale(0);
 }
 @media screen and (min-width: 1200px) {
   .modal-backdrop.is-hidden .modal {
@@ -1112,7 +1138,9 @@ img {
 }
 
 .modal__close-btn {
-  margin-left: auto;
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1133,7 +1161,6 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  padding: 0 32px;
 }
 
 .modal-form__title {
@@ -1205,7 +1232,7 @@ img {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
-  padding-left: 36px;
+  padding-left: 24px;
 }
 .modal-form__checkbox .modal-from__checkbox-icon {
   position: absolute;
@@ -1215,8 +1242,13 @@ img {
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
-  margin-left: 12px;
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox .modal-from__checkbox-icon {
+    margin-left: 12px;
+    padding-left: 36px;
+  }
 }
 
 .modal-form__checkbox-input:checked ~ .modal-from__checkbox-icon {

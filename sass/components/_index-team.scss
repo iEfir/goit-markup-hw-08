@@ -1,9 +1,7 @@
 .team {
     background: #f5f4fa;
-}
-
-.container-team {
     padding: var(--padding-section);
+        
     @media screen and (min-width: 1200px) {
         padding: var(--padding-section-desktop);
     }
@@ -17,6 +15,11 @@
     letter-spacing: 0.03em;
     color: var(--title-color);
     margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.16;
+        margin-bottom: 50px;
+    }
 }
 
 .team__list {
