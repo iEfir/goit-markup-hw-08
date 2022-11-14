@@ -53,8 +53,8 @@ img {
   --title-color: #212121;
   --main-font-family: "roboto", sans-serif;
   --title-logo-font-weight: 700;
-  --padding-section: 60px 15px;
-  --padding-section-desktop: 94px 15px;
+  --padding-section: 60px 0px;
+  --padding-section-desktop: 94px 0px;
   --animation-hover-text: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --animation-hover-bg: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -81,6 +81,7 @@ img {
 
 .container {
   margin: 0 auto;
+  padding: 0 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -140,6 +141,7 @@ img {
   .navigation__list {
     margin-left: 92px;
     margin-right: 0;
+    gap: 50px;
   }
 }
 
@@ -474,15 +476,8 @@ img {
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 768px;
-    padding: 118px 0;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
     padding: 200px 0;
   }
 }
@@ -1076,6 +1071,7 @@ img {
   .footer__logo {
     font-size: 26px;
     line-height: 1.19;
+    text-align: start;
   }
 }
 .footer__logo .footer__logo-part {
@@ -1289,7 +1285,7 @@ img {
   background: #188ce8;
 }
 
-.portfolio-hero .container-portfolio {
+.portfolio-hero {
   padding: var(--padding-section-desktop);
 }
 
